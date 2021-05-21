@@ -3,7 +3,7 @@ ADS Project
 
 
 
-# Problem Statement:
+## Problem Statement:
 
 Wayne Enterprises is developing a new city. They are constructing many buildings and plan to use software to keep track of all buildings under construction in this new city. A building record has the following fields:
 buildingNum: unique integer identifier for each building.
@@ -24,3 +24,23 @@ Wayne Construction works on one building at a time. When it is time to select a 
 
 ## Objectives:
 •	To implement Min Heap and Red Black Tree
+
+## Solution
+
+I used the Java programming language and Eclipse IDE to write the source code of this project. The algorithm that I developed to solve the problem statement is as follows:
+1.	Maintain a variable called ‘gt’, which is the global timer that is initialized to 0 at the declaration.
+2.	Create a minheap using a nx3 matrix where the 1st column stores the building number, the 2nd column stores the executed time and the 3rd column stores the total time.
+3.	Maintain a cur (current) pointer which gives the number of buildings in the city (at the current moment)
+4.	Insert the first building into the minheap.
+5.	Increment the execution time and the ‘gt’ of the root node of the minheap by either 5 or by the difference of total time and execution time, whichever is smaller.
+6.	If the difference of total time and execution time is less than 5, then remove the root (because that building is completed) and print it’s completion time.
+7.	Iterate through all the commands in the input file, for which the counter value is less than or equal to the value of ‘global’. These commands are either an Insert command or a Print command. For the Insert command, do the insert into the minheap and the rbtree. For the Print command, print the triplet.
+8.	Min Heapify, just in case.
+9.	Go to step 5 and keep executing till either the minheap becomes empty.
+
+
+#
+
+The risingCity class contains the main method, and this is where the execution of the program begins. It calls the heapify, insert_mh and print as and when required.
+
+
