@@ -24,4 +24,3 @@ Wayne Construction works on one building at a time. When it is time to select a 
 
 ## Objectives:
 •	To implement Min Heap and Red Black Tree
-![image](https://user-images.githubusercontent.com/73672175/119203827-e2c67280-ba48-11eb-97b2-2910437038e6.png)
